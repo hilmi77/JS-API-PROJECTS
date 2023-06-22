@@ -85,7 +85,7 @@ let appendTypes = (types) => {
 };
 
 let styleCard = (color) => {
-  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%,#ffffff 36%)`;
+  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%,#ffffff 66%)`;
 };
 
 btn.addEventListener("click", getPokeData);
