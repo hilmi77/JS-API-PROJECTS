@@ -74,6 +74,7 @@ src="${imgSrc}"
 </div>
 </div>`;
   appendTypes(data.types);
+  styleCard(themeColor);
 };
 let appendTypes = (types) => {
   types.forEach((item) => {
@@ -82,5 +83,10 @@ let appendTypes = (types) => {
     document.querySelector(".types").appendChild(span);
   });
 };
+
+let styleCard = (color) => {
+  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%,#ffffff 36%)`;
+};
+
 btn.addEventListener("click", getPokeData);
 window.addEventListener("load", getPokeData);
